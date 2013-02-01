@@ -1,0 +1,71 @@
+<?php
+/**
+ * @file
+ * Code for the CA Portfolio feature.
+ */
+
+include_once 'ca_portfolio.features.inc';
+
+/**
+ * Implements hook_menu().
+ */
+function ca_portfolio_menu() {
+  $items['admin/config/worx_features/portfolio'] = array(
+    'title' => 'Portfolio Configuration',
+    'description' => 'Override settings for ca_portfolio',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('ca_portfolio_settings_form'),
+    'access arguments' => array('worx features admin'),
+    'file' => 'ca_portfolio.admin.inc',
+    'file path' => drupal_get_path('module', 'ca_portfolio'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+  $items['admin/config/worx_features/portfolio/general'] = array(
+    'title' => 'General Settings',
+    'description' => 'Override settings for ca_portfolio',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('ca_portfolio_settings_form'),
+    'access arguments' => array('worx features admin'),
+    'file' => 'ca_portfolio.admin.inc',
+    'file path' => drupal_get_path('module', 'ca_portfolio'),
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_menu_alter().
+ */
+function ca_portfolio_menu_alter(&$items) {
+  $items['portfolio']['title'] = variable_get('ca_portfolio_menu_title', 'Portfolio');
+}
+
+/**
+ * Implements hook_panels_pre_render().
+ */
+function ca_portfolio_panels_pre_render($panel, $renderer) {
+  foreach ($panel->content as $key => $value) {
+    if ($value->subtype == 'ca_portfolio-ca_portfolio_list_1') {
+      $panel->title = variable_get('ca_portfolio_panel_title', 'Portfolio');
+    }
+  }
+}
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function ca_portfolio_views_pre_view(&$view, &$display_id, &$args) {
+  if ($display_id == 'ca_portfolio_list_1') {
+    $view->set_items_per_page(variable_get('ca_portfolio_list_count', 5));
+  }
+}
+
+/**
+ * Implementation of hook_ctools_plugin_directory()
+ */
+function ca_portfolio_ctools_plugin_directory($owner, $plugin_type) {
+  if ($owner == 'ctools') {
+    return 'plugins/' . $plugin_type;
+  }
+}
