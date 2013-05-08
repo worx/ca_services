@@ -334,6 +334,8 @@ function ca_services_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['pane_title'] = 'CA Services: Admin ';
+  $handler->display->display_options['pane_category']['name'] = 'CA Admin';
+  $handler->display->display_options['pane_category']['weight'] = '0';
 
   /* Display: CA Services: Sort Order */
   $handler = $view->new_display('panel_pane', 'CA Services: Sort Order', 'ca_services_sort_order');
@@ -399,6 +401,8 @@ function ca_services_views_default_views() {
   $handler->display->display_options['fields']['weight']['label'] = '';
   $handler->display->display_options['fields']['weight']['element_label_colon'] = FALSE;
   $handler->display->display_options['pane_title'] = 'CA Services: Sort Order';
+  $handler->display->display_options['pane_category']['name'] = 'CA Sort';
+  $handler->display->display_options['pane_category']['weight'] = '0';
   $export['ca_services_admin'] = $view;
 
   $view = new view();
@@ -512,6 +516,8 @@ function ca_services_views_default_views() {
   $handler = $view->new_display('panel_pane', 'CA Services: List Template One', 'ca_services_list_1');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['pane_title'] = 'CA Services: List Template One';
+  $handler->display->display_options['pane_category']['name'] = 'CA List';
+  $handler->display->display_options['pane_category']['weight'] = '0';
 
   /* Display: Feed */
   $handler = $view->new_display('feed', 'Feed', 'feed_1');
@@ -623,6 +629,8 @@ function ca_services_views_default_views() {
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['pane_title'] = 'CA Services: Node Template One A';
+  $handler->display->display_options['pane_category']['name'] = 'CA Node';
+  $handler->display->display_options['pane_category']['weight'] = '0';
 
   /* Display: CA Services: Node Template One B */
   $handler = $view->new_display('panel_pane', 'CA Services: Node Template One B', 'ca_services_node_1_b');
@@ -662,6 +670,8 @@ function ca_services_views_default_views() {
   $handler->display->display_options['sorts']['delta']['table'] = 'field_data_field_ca_services_s_image';
   $handler->display->display_options['sorts']['delta']['field'] = 'delta';
   $handler->display->display_options['pane_title'] = 'CA Services: Node Template One B';
+  $handler->display->display_options['pane_category']['name'] = 'CA Node';
+  $handler->display->display_options['pane_category']['weight'] = '0';
   $export['ca_services_node'] = $view;
 
   return $export;

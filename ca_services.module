@@ -1,33 +1,33 @@
 <?php
 /**
  * @file
- * Code for the CA Portfolio feature.
+ * Code for the CA Services feature.
  */
 
-include_once 'ca_portfolio.features.inc';
+include_once 'ca_services.features.inc';
 
 /**
  * Implements hook_menu().
  */
-function ca_portfolio_menu() {
-  $items['admin/config/worx_features/portfolio'] = array(
-    'title' => 'Portfolio Configuration',
-    'description' => 'Override settings for ca_portfolio',
+function ca_services_menu() {
+  $items['admin/config/worx_features/services'] = array(
+    'title' => 'Services Configuration',
+    'description' => 'Override settings for ca_services',
     'page callback' => 'drupal_get_form',
-    'page arguments' => array('ca_portfolio_settings_form'),
+    'page arguments' => array('ca_services_settings_form'),
     'access arguments' => array('worx features admin'),
-    'file' => 'ca_portfolio.admin.inc',
-    'file path' => drupal_get_path('module', 'ca_portfolio'),
+    'file' => 'ca_services.admin.inc',
+    'file path' => drupal_get_path('module', 'ca_services'),
     'type' => MENU_NORMAL_ITEM,
   );
-  $items['admin/config/worx_features/portfolio/general'] = array(
+  $items['admin/config/worx_features/services/general'] = array(
     'title' => 'General Settings',
-    'description' => 'Override settings for ca_portfolio',
+    'description' => 'Override settings for ca_services',
     'page callback' => 'drupal_get_form',
-    'page arguments' => array('ca_portfolio_settings_form'),
+    'page arguments' => array('ca_services_settings_form'),
     'access arguments' => array('worx features admin'),
-    'file' => 'ca_portfolio.admin.inc',
-    'file path' => drupal_get_path('module', 'ca_portfolio'),
+    'file' => 'ca_services.admin.inc',
+    'file path' => drupal_get_path('module', 'ca_services'),
     'type' => MENU_DEFAULT_LOCAL_TASK,
   );
 
@@ -37,17 +37,17 @@ function ca_portfolio_menu() {
 /**
  * Implements hook_menu_alter().
  */
-function ca_portfolio_menu_alter(&$items) {
-  $items['portfolio']['title'] = variable_get('ca_portfolio_menu_title', 'Portfolio');
+function ca_services_menu_alter(&$items) {
+  $items['services']['title'] = variable_get('ca_services_menu_title', 'Services');
 }
 
 /**
  * Implements hook_panels_pre_render().
  */
-function ca_portfolio_panels_pre_render($panel, $renderer) {
+function ca_services_panels_pre_render($panel, $renderer) {
   foreach ($panel->content as $key => $value) {
-    if ($value->subtype == 'ca_portfolio-ca_portfolio_list_1') {
-      $panel->title = variable_get('ca_portfolio_panel_title', 'Portfolio');
+    if ($value->subtype == 'ca_services-ca_services_list_1') {
+      $panel->title = variable_get('ca_services_panel_title', 'Services');
     }
   }
 }
@@ -55,16 +55,16 @@ function ca_portfolio_panels_pre_render($panel, $renderer) {
 /**
  * Implements hook_views_pre_render().
  */
-function ca_portfolio_views_pre_view(&$view, &$display_id, &$args) {
-  if ($display_id == 'ca_portfolio_list_1') {
-    $view->set_items_per_page(variable_get('ca_portfolio_list_count', 5));
+function ca_services_views_pre_view(&$view, &$display_id, &$args) {
+  if ($display_id == 'ca_services_list_1') {
+    $view->set_items_per_page(variable_get('ca_services_list_count', 5));
   }
 }
 
 /**
  * Implementation of hook_ctools_plugin_directory()
  */
-function ca_portfolio_ctools_plugin_directory($owner, $plugin_type) {
+function ca_services_ctools_plugin_directory($owner, $plugin_type) {
   if ($owner == 'ctools') {
     return 'plugins/' . $plugin_type;
   }

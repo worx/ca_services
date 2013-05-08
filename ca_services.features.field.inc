@@ -147,7 +147,7 @@ function ca_services_field_default_fields() {
         'max_filesize' => '',
         'max_resolution' => '1000x1000',
         'min_resolution' => '200x200',
-        'title_field' => 0,
+        'title_field' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
