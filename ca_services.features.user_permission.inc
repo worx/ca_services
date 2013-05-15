@@ -14,9 +14,9 @@ function ca_services_user_default_permissions() {
   $permissions['create services content'] = array(
     'name' => 'create services content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'services admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'services admin' => 'services admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -25,9 +25,9 @@ function ca_services_user_default_permissions() {
   $permissions['delete any services content'] = array(
     'name' => 'delete any services content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'services admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'services admin' => 'services admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -36,9 +36,9 @@ function ca_services_user_default_permissions() {
   $permissions['delete own services content'] = array(
     'name' => 'delete own services content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'services admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'services admin' => 'services admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -47,9 +47,9 @@ function ca_services_user_default_permissions() {
   $permissions['edit any services content'] = array(
     'name' => 'edit any services content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'services admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'services admin' => 'services admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -58,9 +58,9 @@ function ca_services_user_default_permissions() {
   $permissions['edit own services content'] = array(
     'name' => 'edit own services content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'services admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'services admin' => 'services admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
