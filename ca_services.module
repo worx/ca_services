@@ -46,7 +46,7 @@ function ca_services_menu_alter(&$items) {
  */
 function ca_services_panels_pre_render($panel, $renderer) {
   foreach ($panel->content as $key => $value) {
-    if ($value->subtype == 'ca_services-ca_services_list_1') {
+    if ($value->subtype == 'ca_services_list-ca_services_list_1') {
       $panel->title = variable_get('ca_services_panel_title', 'Services');
     }
   }

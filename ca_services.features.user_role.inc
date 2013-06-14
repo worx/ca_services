@@ -13,7 +13,7 @@ function ca_services_user_default_roles() {
   // Exported role: services admin.
   $roles['services admin'] = array(
     'name' => 'services admin',
-    'weight' => '6',
+    'weight' => 6,
     'machine_name' => 'services_admin',
   );
 
