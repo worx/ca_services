@@ -1,6 +1,10 @@
-.pane-ca-services-node-ca-services-node-1-a, .pane-ca-services-node-ca-services-node-1-b {clear: left; float: left; padding-right: 15px; padding-bottom: 5px;}
+.pane-ca-services-node-ca-services-node-1-a {float: left;}
 
-.view-ca-services-list .views-field-field-ca-services-s-image {float: left; padding-right: 15px; padding-bottom: 5px;}
+.pane-ca-services-node-ca-services-node-1-b {clear: left; float: left; padding: 0 15px 5px 0; width: 200px;}
+
+.pane-ca-services-node-ca-services-node-1-a .views-field-field-ca-services-s-image {padding: 0 15px 5px 0;}
+
+.view-ca-services-list .views-field-field-ca-services-s-image {float: left; padding: 0 15px 5px 0;}
 
 .view-ca-services-node .views-field-field-ca-services-s-image, .view-ca-services-node .views-field-field-ca-services-s-image-1 {float: left;}
 
