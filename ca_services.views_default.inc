@@ -336,6 +336,7 @@ function ca_services_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Services: Admin ';
   $handler->display->display_options['pane_category']['name'] = 'CA Admin';
   $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['inherit_panels_path'] = '1';
 
   /* Display: CA Services: Sort Order */
   $handler = $view->new_display('panel_pane', 'CA Services: Sort Order', 'ca_services_sort_order');
@@ -403,6 +404,7 @@ function ca_services_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Services: Sort Order';
   $handler->display->display_options['pane_category']['name'] = 'CA Sort';
   $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['inherit_panels_path'] = '1';
   $export['ca_services_admin'] = $view;
 
   $view = new view();
