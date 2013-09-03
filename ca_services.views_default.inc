@@ -529,12 +529,13 @@ function ca_services_views_default_views() {
   $handler->display->display_options['pane_category']['weight'] = '0';
 
   /* Display: Feed */
-  $handler = $view->new_display('feed', 'Feed', 'feed_1');
+  $handler = $view->new_display('feed', 'Feed', 'ca_services_feed');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'rss';
   $handler->display->display_options['row_plugin'] = 'node_rss';
+  $handler->display->display_options['defaults']['empty'] = FALSE;
   $handler->display->display_options['path'] = 'services/feed';
   $handler->display->display_options['displays'] = array(
     'ca_services_list_1' => 'ca_services_list_1',
