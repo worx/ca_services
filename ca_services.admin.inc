@@ -38,13 +38,6 @@ function ca_services_settings_form() {
     '#required' => TRUE,
     '#description' => t('How many case studies would you like displayed per page?'),
   );
-  $form['ca_services_block_count'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Case Studies in the block'),
-    '#default_value' => variable_get('ca_services_block_count', 1),
-    '#required' => TRUE,
-    '#description' => t('How many case studies would you like displayed in the block?'),
-  );
   $form['ca_services_list_template'] = array(
     '#type' => 'select',
     '#title' => t('Services\'s list template'),
