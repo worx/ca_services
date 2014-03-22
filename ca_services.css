@@ -1,17 +1,9 @@
 .pane-ca-services-node-ca-services-node-1-a {float: left;}
 
-.pane-ca-services-node-ca-services-node-1-b {clear: left; float: left; padding: 0 15px 5px 0; width: 200px;}
-
 .pane-ca-services-node-ca-services-node-1-a .views-field-field-ca-services-s-image {padding: 0 15px 5px 0;}
 
+.pane-ca-services-node-ca-services-node-1-b {float: left; clear: left; padding: 0 15px 5px 0; width: 200px; text-align: center;}
+
 .view-ca-services-list .views-field-field-ca-services-s-image {float: left; padding: 0 15px 5px 0;}
-
-.view-ca-services-node .views-field-field-ca-services-s-image, .view-ca-services-node .views-field-field-ca-services-s-image-1 {float: left;}
-
-.view-ca-services-node {width: 200px;}
-
-.pane-ca-services-node-ca-services-node-1-b img {float: left; padding: 0 2.5px 5px;}
-
-.pane-ca-services-node-ca-services-node-1-b .pager .ajax-progress {display: none;}
 
 .view-ca-services-list .views-field-nothing {clear: both;}

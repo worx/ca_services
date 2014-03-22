@@ -1,0 +1,66 @@
+.ca-services-list .views-field-field-ca-services-s-image {
+    float: none;
+    text-align: center;
+}
+
+.ca-services-list .views-field-field-ca-services-s-image img {
+    padding: 0 0 5px 0;
+}
+
+.pane-ca-services-node-ca-services-node-1-a {
+    float: none;
+    text-align: center;
+}
+
+.pane-ca-services-node-ca-services-node-1-a .views-field-field-ca-services-s-image {
+    padding: 0 0 5px;
+}
+
+
+.pane-ca-services-node-ca-services-node-1-b {
+    float: none;
+    clear: left;
+    padding: 0 0 5px;
+    text-align: center;
+    width: auto;
+}
+
+.pane-ca-services-node-ca-services-node-1-b table {
+  width: 100%
+}
+
+.pane-ca-services-node-ca-services-node-1-b td {
+  width: 25%;
+  padding: 0;
+  text-align: center;
+}
+
+@media only screen and (min-width:481px) {
+  .ca-services-list .views-field-field-ca-services-s-image{
+    float: left;
+  }
+
+  .ca-services-list .views-field-field-ca-services-s-image img {
+    padding: 0 15px 5px 0;
+  }
+
+  .pane-ca-services-node-ca-services-node-1-a {
+    float: left;
+  }
+
+  .pane-ca-services-node-ca-services-node-1-a .views-field-field-ca-services-s-image {
+    padding: 0 15px 5px 0;
+  }
+
+  .pane-ca-services-node-ca-services-node-1-b {
+    float: left;
+    clear: left;
+    padding: 0 15px 5px 0;
+    text-align: center;
+    width: 200px;
+  }
+
+  .view-ca-blog-node .views-field-field-ca-services-s-image-1 img {
+    padding: 0 5px 5px 0;
+  }
+}
