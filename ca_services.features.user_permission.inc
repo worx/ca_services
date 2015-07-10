@@ -15,7 +15,6 @@ function ca_services_user_default_permissions() {
     'name' => 'create services content',
     'roles' => array(
       'administrator' => 'administrator',
-      'services admin' => 'services admin',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -26,7 +25,6 @@ function ca_services_user_default_permissions() {
     'name' => 'delete any services content',
     'roles' => array(
       'administrator' => 'administrator',
-      'services admin' => 'services admin',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -37,7 +35,6 @@ function ca_services_user_default_permissions() {
     'name' => 'delete own services content',
     'roles' => array(
       'administrator' => 'administrator',
-      'services admin' => 'services admin',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -48,7 +45,6 @@ function ca_services_user_default_permissions() {
     'name' => 'edit any services content',
     'roles' => array(
       'administrator' => 'administrator',
-      'services admin' => 'services admin',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -59,7 +55,6 @@ function ca_services_user_default_permissions() {
     'name' => 'edit own services content',
     'roles' => array(
       'administrator' => 'administrator',
-      'services admin' => 'services admin',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',

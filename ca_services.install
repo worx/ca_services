@@ -25,7 +25,7 @@ function ca_services_install() {
   // Added the permission assign node weights for Services Admin.
   user_role_change_permissions(256931005, 
     array(
-      'assign node weight' => TRUE,
+      'assign node weights' => TRUE,
     )
   );
 }

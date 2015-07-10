@@ -94,12 +94,12 @@ function ca_services_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'multiupload_imagefield_widget',
+      'module' => 'image',
       'settings' => array(
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'image_miw',
+      'type' => 'image_image',
       'weight' => 1,
     ),
   );
