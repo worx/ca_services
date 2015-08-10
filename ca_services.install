@@ -22,10 +22,10 @@ function ca_services_install() {
   // Set the Pathauto for the node.
   variable_set('pathauto_node_services_pattern', 'services/[node:title]');
 
-  // Added the permission assign node weights for Services Admin.
+  // Added the permission assign node weight for Services Admin.
   user_role_change_permissions(256931005, 
     array(
-      'assign node weights' => TRUE,
+      'assign node weight' => TRUE,
     )
   );
 }
