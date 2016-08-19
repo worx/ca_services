@@ -10,7 +10,7 @@
 function ca_services_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-services-body'
+  // Exported field_instance: 'node-services-body'.
   $field_instances['node-services-body'] = array(
     'bundle' => 'services',
     'default_value' => NULL,
@@ -54,7 +54,7 @@ function ca_services_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-services-field_ca_services_s_image'
+  // Exported field_instance: 'node-services-field_ca_services_s_image'.
   $field_instances['node-services-field_ca_services_s_image'] = array(
     'bundle' => 'services',
     'deleted' => 0,
@@ -96,6 +96,18 @@ function ca_services_field_default_field_instances() {
       'active' => 1,
       'module' => 'multiupload_imagefield_widget',
       'settings' => array(
+        'manualcrop_crop_info' => TRUE,
+        'manualcrop_default_crop_area' => TRUE,
+        'manualcrop_enable' => FALSE,
+        'manualcrop_inline_crop' => FALSE,
+        'manualcrop_instant_crop' => FALSE,
+        'manualcrop_instant_preview' => TRUE,
+        'manualcrop_keyboard' => TRUE,
+        'manualcrop_maximize_default_crop_area' => FALSE,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => FALSE,
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
