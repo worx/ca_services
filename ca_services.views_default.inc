@@ -353,7 +353,7 @@ function ca_services_views_default_views() {
   $handler->display->display_options['fields']['field_ca_services_s_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_services_s_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_services_s_image']['settings'] = array(
-    'image_style' => 'default',
+    'image_style' => 'crop_default_landscape',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_ca_services_s_image']['delta_limit'] = '1';
@@ -477,7 +477,8 @@ function ca_services_views_default_views() {
   $handler->display->display_options['fields']['field_ca_services_s_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_services_s_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_services_s_image']['settings'] = array(
-    'colorbox_node_style' => 'default',
+    'colorbox_node_style' => 'crop_default_landscape',
+    'colorbox_node_style_first' => '',
     'colorbox_image_style' => '',
     'colorbox_gallery' => 'post',
     'colorbox_gallery_custom' => '',
@@ -557,7 +558,8 @@ function ca_services_views_default_views() {
   $handler->display->display_options['fields']['field_ca_services_s_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_services_s_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_services_s_image']['settings'] = array(
-    'colorbox_node_style' => 'default_thumbnail',
+    'colorbox_node_style' => 'crop_default_landscape_thumbnail',
+    'colorbox_node_style_first' => '',
     'colorbox_image_style' => '',
     'colorbox_gallery' => 'post',
     'colorbox_gallery_custom' => '',
