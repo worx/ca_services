@@ -22,10 +22,81 @@ function ca_services_install() {
   // Set the Pathauto for the node.
   variable_set('pathauto_node_services_pattern', 'services/[node:title]');
 
-  // Added the permission assign node weight for Services Admin.
+  // Set the permissions for Services Admin.
   user_role_change_permissions(256931005, 
     array(
       'assign node weight' => TRUE,
+      'create services content' => TRUE,
+      'delete any services content' => TRUE,
+      'delete own services content' => TRUE,
+      'edit any services content' => TRUE,
+      'edit own services content' => TRUE,
     )
   );
+
+  // Set the permissions for Administrator
+  user_role_change_permissions(3, 
+    array(
+      'assign node weight' => TRUE,
+      'create services content' => TRUE,
+      'delete any services content' => TRUE,
+      'delete own services content' => TRUE,
+      'edit any services content' => TRUE,
+      'edit own services content' => TRUE,
+    )
+  );
+
+  // Set the permissions for Webmaster
+  user_role_change_permissions(4, 
+    array(
+      'assign node weight' => TRUE,
+      'create services content' => TRUE,
+      'delete any services content' => TRUE,
+      'delete own services content' => TRUE,
+      'edit any services content' => TRUE,
+      'edit own services content' => TRUE,
+    )
+  );
+}
+
+/**
+ * Set the permissions for Services Admin, Webmaster and Administrator as a one time event rather than handled with features to allow additonal roles to be 
+ * given these permissions without overridding the feature.
+ */
+function ca_services_update_7000() {
+  // Set the permissions for Services Admin.
+  user_role_change_permissions(256931005, 
+    array(
+      'assign node weight' => TRUE,
+      'create services content' => TRUE,
+      'delete any services content' => TRUE,
+      'delete own services content' => TRUE,
+      'edit any services content' => TRUE,
+      'edit own services content' => TRUE,
+    )
+  );
+
+  // Set the permissions for Administrator
+  user_role_change_permissions(3, 
+    array(
+      'assign node weight' => TRUE,
+      'create services content' => TRUE,
+      'delete any services content' => TRUE,
+      'delete own services content' => TRUE,
+      'edit any services content' => TRUE,
+      'edit own services content' => TRUE,
+    )
+  );
+
+  // Set the permissions for Webmaster
+  user_role_change_permissions(4, 
+    array(
+      'assign node weight' => TRUE,
+      'create services content' => TRUE,
+      'delete any services content' => TRUE,
+      'delete own services content' => TRUE,
+      'edit any services content' => TRUE,
+      'edit own services content' => TRUE,
+    )
+  )
 }
