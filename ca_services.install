@@ -26,11 +26,6 @@ function ca_services_install() {
   user_role_change_permissions(256931005, 
     array(
       'assign node weight' => TRUE,
-      'create services content' => TRUE,
-      'delete any services content' => TRUE,
-      'delete own services content' => TRUE,
-      'edit any services content' => TRUE,
-      'edit own services content' => TRUE,
     )
   );
 
@@ -38,11 +33,6 @@ function ca_services_install() {
   user_role_change_permissions(3, 
     array(
       'assign node weight' => TRUE,
-      'create services content' => TRUE,
-      'delete any services content' => TRUE,
-      'delete own services content' => TRUE,
-      'edit any services content' => TRUE,
-      'edit own services content' => TRUE,
     )
   );
 
@@ -50,11 +40,6 @@ function ca_services_install() {
   user_role_change_permissions(4, 
     array(
       'assign node weight' => TRUE,
-      'create services content' => TRUE,
-      'delete any services content' => TRUE,
-      'delete own services content' => TRUE,
-      'edit any services content' => TRUE,
-      'edit own services content' => TRUE,
     )
   );
 }
@@ -68,11 +53,6 @@ function ca_services_update_7000() {
   user_role_change_permissions(256931005, 
     array(
       'assign node weight' => TRUE,
-      'create services content' => TRUE,
-      'delete any services content' => TRUE,
-      'delete own services content' => TRUE,
-      'edit any services content' => TRUE,
-      'edit own services content' => TRUE,
     )
   );
 
@@ -80,11 +60,6 @@ function ca_services_update_7000() {
   user_role_change_permissions(3, 
     array(
       'assign node weight' => TRUE,
-      'create services content' => TRUE,
-      'delete any services content' => TRUE,
-      'delete own services content' => TRUE,
-      'edit any services content' => TRUE,
-      'edit own services content' => TRUE,
     )
   );
 
@@ -92,11 +67,6 @@ function ca_services_update_7000() {
   user_role_change_permissions(4, 
     array(
       'assign node weight' => TRUE,
-      'create services content' => TRUE,
-      'delete any services content' => TRUE,
-      'delete own services content' => TRUE,
-      'edit any services content' => TRUE,
-      'edit own services content' => TRUE,
     )
-  )
+  );
 }
