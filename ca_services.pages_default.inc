@@ -63,8 +63,8 @@ function ca_services_default_page_manager_handlers() {
   $display->cache = array();
   $display->title = '%node:title';
   $display->uuid = '2eb0f5ff-214a-4fc4-8bbd-da56066e9b3f';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'ca_services_node_view_panel_context';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -218,8 +218,8 @@ function ca_services_default_page_manager_handlers() {
   $display->cache = array();
   $display->title = '%node:title';
   $display->uuid = '2eb0f5ff-214a-4fc4-8bbd-da56066e9b3f';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'node_view__panel_context_6f1067ef-d385-4722-a3e6-2fcac85cef32';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -462,8 +462,8 @@ function ca_services_default_page_manager_pages() {
   $display->cache = array();
   $display->title = 'CA Services: Admin';
   $display->uuid = 'f76afe84-2c98-4a8f-893b-0a60d0e3704a';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_services_administration_panel_context';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -570,8 +570,8 @@ function ca_services_default_page_manager_pages() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '45976e12-22cb-4073-8e1a-bc5afb9af4eb';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_services_list_view__panel_context_90f8f88f-f5c5-4495-b793-cb914741cdfd';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -640,8 +640,8 @@ function ca_services_default_page_manager_pages() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '45976e12-22cb-4073-8e1a-bc5afb9af4eb';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_services_list_view_panel_context';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -744,8 +744,8 @@ function ca_services_default_page_manager_pages() {
   $display->cache = array();
   $display->title = 'Sort';
   $display->uuid = 'd5225342-dcd6-4be5-9ad9-55dc6daadfc1';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_services_sort_panel_context';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
