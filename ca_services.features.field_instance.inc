@@ -98,7 +98,7 @@ function ca_services_field_default_field_instances() {
       'settings' => array(
         'manualcrop_crop_info' => 1,
         'manualcrop_default_crop_area' => 1,
-        'manualcrop_enable' => 0,
+        'manualcrop_enable' => 1,
         'manualcrop_inline_crop' => 0,
         'manualcrop_instant_crop' => 0,
         'manualcrop_instant_preview' => 1,
