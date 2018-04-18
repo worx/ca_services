@@ -2,8 +2,19 @@
 
 .pane-ca-services-node-ca-services-node-1-a .views-field-field-ca-services-s-image {padding: 0 15px 5px 0;}
 
-.pane-ca-services-node-ca-services-node-1-b {float: left; clear: left; padding: 0 15px 5px 0; width: 200px; text-align: center;}
+.pane-ca-services-node-ca-services-node-1-b {float: left; clear: left; margin: 0 15px 5px 0; width: 200px; text-align: center;}
 
 .view-ca-services-list .views-field-field-ca-services-s-image {float: left; padding: 0 15px 5px 0;}
 
 .view-ca-services-list .views-field-nothing {clear: both;}
+
+/* Flex List */
+.pane-ca-services-node-ca-services-node-1-b .view-content {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.pane-ca-services-node-ca-services-node-1-b .views-row {
+  text-align: center;
+  flex: 0 1 25%;
+}
