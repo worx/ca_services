@@ -9,7 +9,6 @@ dependencies[] = context_admin_vbo
 dependencies[] = features
 dependencies[] = field_ui
 dependencies[] = multiupload_imagefield_widget
-dependencies[] = name
 dependencies[] = page_manager
 dependencies[] = panels
 dependencies[] = pathauto
