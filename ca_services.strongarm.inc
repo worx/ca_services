@@ -13,6 +13,27 @@ function ca_services_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_services';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_services'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_services';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_services'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_services';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_services'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__services';
   $strongarm->value = array(
     'view_modes' => array(),
@@ -82,6 +103,13 @@ function ca_services_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_services_pattern';
+  $strongarm->value = '';
+  $export['pathauto_taxonomy_term_services_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'save_continue_services';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_services'] = $strongarm;
@@ -123,6 +151,16 @@ function ca_services_strongarm() {
     'priority' => '0.5',
   );
   $export['xmlsitemap_settings_node_services'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'xmlsitemap_settings_taxonomy_term_services';
+  $strongarm->value = array(
+    'status' => '0',
+    'priority' => '0.5',
+  );
+  $export['xmlsitemap_settings_taxonomy_term_services'] = $strongarm;
 
   return $export;
 }
